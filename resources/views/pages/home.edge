@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      HydroSol - Retrouvez la performance hydrolique
-    </title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-  </head>
- 
-  <body>
+@layout.home({title: 'HydroSol - Retrouvez la performance hydrolique'})
+
+  @slot('meta')
+    <meta name="description" content="HydroSol est un site fournissant des guides et des pièces pour réparer les organes hydrauliques des voitures CITROËN" />
+  @endslot
+
+  @slot('main')
     <h1 class="text-green text-5xl">
       HydrSol
     </h1>
-  </body>
-</html>
+  @endslot
+@end
