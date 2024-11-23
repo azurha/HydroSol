@@ -12,15 +12,39 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
  
-  <body>
-    <header>
+  <body class="min-h-full 
+              flex 
+              flex-col
+              lightBackground
+              text-gray-900
+  ">
+    <header class="sticky 
+                  top-0 
+                  z-50
+                  bg-white
+                  shadow-sm
+    ">
         @component('components/top-menu')
         @end
     </header>
-    <main>
+    <main class="flex-grow
+                w-full
+                max-w-7xl              /* ~1280px */
+                mx-auto                /* Centre horizontalement */
+                px-4                  /* Padding mobile */
+                sm:px-6               /* Padding tablette */
+                lg:px-8              /* Padding desktop */
+                py-6                  /* Padding vertical */
+                sm:py-8
+                lg:py-12
+    ">
         {{{ await $slots.main() }}}
     </main>
-    <footer>
+    <footer class="mt-auto               /* Pousse le footer en bas */
+                lightBackground
+                text-white
+                w-full
+    ">
         @component('components/footer')
         @end
     </footer>

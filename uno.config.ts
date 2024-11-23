@@ -13,5 +13,11 @@ export default defineConfig({
     },
     filesystem: ['resources/views/**/*.edge'],
   },
-  rules: [['text-green', { color: '#1D5B35' }]],
+  theme: {
+    colors: {
+      greenLhm: 'hsl(143deg 51% 23%)',
+      lightBrown: 'hsl(69deg 23% 68%)',
+    },
+  },
+  rules: [['lightBackground', { 'background-color': 'hsl(69deg 23% 68%)' }]],
 })
