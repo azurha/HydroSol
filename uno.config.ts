@@ -15,9 +15,13 @@ export default defineConfig({
   },
   theme: {
     colors: {
-      greenLhm: 'hsl(143deg 51% 23%)',
-      lightBrown: 'hsl(69deg 23% 68%)',
+      'greenLhm': 'hsl(143deg 51% 23%)',
+      'darkBrown': 'hsl(69deg 23% 68%)',
+      'lightBrown': 'hsl(69deg 22% 77%)',
     },
   },
-  rules: [['lightBackground', { 'background-color': 'hsl(69deg 23% 68%)' }]],
+  rules: [
+    [/^bg-light-(.*)$/, ([, c]) => ({ 'background-color': c })],
+    [/^text-color-(.*)$/, ([, c]) => ({ color: c })],
+  ],
 })
