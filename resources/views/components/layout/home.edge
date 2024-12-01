@@ -12,24 +12,25 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
  
-  <body class="min-h-full
+  <body class="min-h-screen
               max-w-[1200px]
               mx-auto
               flex 
               flex-col
-              bg-lightBrown
+              bg-greenLhm
               text-gray-900
   ">
     <header class="sticky 
                   top-0 
                   z-50
-                  bg-greenLhm
+                  bg-white
                   shadow-sm
     ">
         @component('components/top-menu')
         @end
     </header>
     <main class="flex-grow
+                bg-white
                 w-full
                 max-w-7xl              /* ~1280px */
                 mx-auto                /* Centre horizontalement */

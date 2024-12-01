@@ -15,7 +15,7 @@ export default defineConfig({
   },
   theme: {
     colors: {
-      'greenLhm': 'hsl(143deg 51% 23%)',
+      'greenLhm': 'hsl(158deg 100% 20%)',
       'darkBrown': 'hsl(69deg 23% 68%)',
       'lightBrown': 'hsl(69deg 22% 77%)',
     },
