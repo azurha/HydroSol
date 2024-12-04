@@ -3,7 +3,7 @@ E-commerce sit selling hydraulic components for Citroën cars.
 
 AdonisJS + Unpoly
 
-![logo](resources/favicon/faviconRetina.png)
+![logo](resources/icon/LogoWhite.svg)
 
 Finding a workshop capable of servicing our Citroëns with hydropneumatic suspension is becoming increasingly difficult.
 
