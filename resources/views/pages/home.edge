@@ -1,20 +1,11 @@
-@layout.home({title: 'Mentions légales'})
+@layout.mainLayout({title: 'Mentions légales'})
 
   @slot('meta')
     <meta name="description" content="HydroSol est un site fournissant des guides et des pièces pour réparer les organes hydrauliques des voitures CITROËN" />
   @endslot
 
   @slot('main')
-    <h1 class="text-greenLhm text-5xl">
-      HydrSol
-    </h1>
-    <img src="/resources/favicon/sphere.svg"><img>
-<ul>
-  <li>Blabla</li>
-  <li>Blabla</li>
-  <li>Blabla</li>
-  <li>Blabla</li>
-  <li>Blabla</li>
-</ul>
+    @component('components/main/home')
+    @end
   @endslot
 @end

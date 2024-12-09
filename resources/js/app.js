@@ -4,4 +4,4 @@ import 'virtual:uno.css'
 import 'unpoly'
 import 'unpoly/unpoly.css'
 
-console.log('Hello World')
+up.boot()

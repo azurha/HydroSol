@@ -32,18 +32,7 @@
         @component('components/top-menu')
         @end
     </header>
-    <main class="flex-grow
-                bg-white
-                w-full
-                max-w-7xl              /* ~1280px */
-                mx-auto                /* Centre horizontalement */
-                px-4                  /* Padding mobile */
-                sm:px-6               /* Padding tablette */
-                lg:px-8              /* Padding desktop */
-                py-6                  /* Padding vertical */
-                sm:py-8
-                lg:py-12
-    ">
+    <main data-main-section>
         {{{ await $slots.main() }}}
     </main>
     <footer class="mt-auto               /* Pousse le footer en bas */
